@@ -1,0 +1,80 @@
+.perfil{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.interfaz{
+    width: 100%;
+    background: transparent;
+    padding: 35px;
+    transition: all 0.2 ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+.ul1 .li1{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.2s ease;
+}
+
+.ul1 .li1:hover{
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.a1{
+    color: white;
+    text-decoration: none;
+}
+
+.a1:hover{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.scrol{
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.perfil {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    margin: 0;
+}
+
+.ptitulo {
+    margin-top: 10px;
+}
+
