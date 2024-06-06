@@ -1,14 +1,10 @@
-.perfil{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-}
 
-.interfaz{
+.interfaz {
+    margin-top: 15px;
     width: 100%;
     background: transparent;
     padding: 35px;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,31 +13,31 @@
     font-weight: bold;
 }
 
-.ul1 .li1{
+.ul1 .li1 {
     display: inline-block;
     padding: 0 20px;
     transition: all 0.2s ease;
 }
 
-.ul1 .li1:hover{
+.ul1 .li1:hover {
     padding: 5px 10px;
     background: white;
     color: black;
     border-radius: 15px;
 }
 
-.a1{
+.a1 {
     color: white;
     text-decoration: none;
 }
 
-.a1:hover{
+.a1:hover {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
 
-.scrol{
+.scrol {
     height: 100px;
 }
 
@@ -70,11 +66,54 @@
     flex-direction: column;
 }
 
-.titulo {
-    margin: 0;
-}
-
 .ptitulo {
     margin-top: 10px;
 }
 
+.linkedin {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: transparent;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.github {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: transparent;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 50px;
+}
+
+.subtitulo{
+    margin: 0;
+    font-size: 30px;
+}
+
+.tituloperono{
+    color: blue;
+    font-size: 40px;
+}
+
+.github:hover{
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.linkedin:hover{
+    
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
