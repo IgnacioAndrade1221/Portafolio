@@ -1,17 +1,14 @@
-
 .interfaz {
-    margin-top: 15px;
-    width: 100%;
+    position: fixed; /* Fija la barra en la parte superior de la página */
+    top: 0; /* Coloca la barra en la parte superior */
     background: transparent;
-    padding: 35px;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-left: 1%;
-    font-weight: bold;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 15px 1%; /* Ajusta el padding si es necesario */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    text-align: center;
 }
+
 
 .ul1 .li1 {
     display: inline-block;
@@ -151,7 +148,7 @@
     height: auto;
 }
 
-.contac{
+.css{
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -159,5 +156,20 @@
     color: transparent;
     transition: background-color 0.3s;
     z-index: 1000;
+    margin-left: 25px;
 }
 
+.css:hover{
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
+li {
+    list-style-type: none; /* Elimina los puntos negros de los elementos de lista */
+    margin-left: 0; /* Elimina cualquier margen adicional si es necesario */
+    padding-left: 0; /* Elimina cualquier relleno adicional si es necesario */
+}
+
+.item span {
+    margin-left: 10px; /* Añade un espacio entre la imagen y el texto */
+}
