@@ -1,11 +1,15 @@
-const nav = document.querySelector('.interfaz');
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
 
-window.addEventListener('scroll', function() {
-    // Calcula la opacidad basada en el scroll
-    const scrollAmount = window.scrollY;
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
-    const opacity = 1 - (scrollAmount / maxScroll);
+    if (currentScroll > lastScrollTop) {
 
-    // Aplica la opacidad al nav
-    nav.style.opacity = Math.max(opacity, 0.50); // Asegura que la opacidad no sea menor a 0.3
+        header.classList.add("hidden");
+    } else {
+ 
+        header.classList.remove("hidden");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 });

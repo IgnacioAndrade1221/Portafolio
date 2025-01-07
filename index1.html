@@ -14,9 +14,9 @@
 
         <nav>
             <a href="#" class="active"> Home</a>
-            <a href="#" >Skills</a>
+            <a href="#skills" >Skills</a>
+            <a href="#projects" >Projects</a>
             <a href="#" >Education</a>
-            <a href="#" >Projects</a>
             <a href="#" >Contact</a>
         </nav>
     </header>
@@ -27,20 +27,84 @@
         <div class="home-content">
             <h1>Hi, It's <span>Ignacio</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hola,soy un estudiante de 4to semestre en Ingenieria en informatica en Duoc UC, el cual <br> le motiva mucho
+            <p>Hola,soy un analista programador computacional el cual tambien es <br>estudiante de 5to semestre en Ingenieria en informatica en Duoc UC, <br>el cual le motiva mucho
                 la programacion y el constante aprendizaje.</p>
             <div class="social-icons">
                 <a target="_blank" href="https://www.linkedin.com/in/ignacioalexis""><i class="fa-brands fa-linkedin"></i></a>
                 <a target="_blank" href="https://github.com/IgnacioAndrade1221""><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <a target="_blank" href="#" class="btn">CV</a>
         </div>
     </section>
 
-    <section id="" class="home">
-        <div class="home-content">
+    <section id="skills" class="skills">
+        <div class="skills-header">
             <h1><span>Skills</span></h1>
         </div>
+        <div class="skills-container">
+            <!-- Lenguajes -->
+            <div class="skills-category">
+                <h2><span>Languages</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/python.png" title="Python" alt="Python"></li>
+                    <li><img class="skills-images" src="images/html.png" title="HTML" alt="HTML"></li>
+                    <li><img class="skills-images" src="images/css-3.png" title="CSS" alt="CSS"></li>
+                    <li><img class="skills-images" src="images/js.png" title="JavaScript" alt="JavaScript"></li>
+                    <li><img class="skills-images" src="images/java.png" title="Java" alt="Java"></li>
+                    <li><img class="skills-images" src="images/sql.png" title="SQL" alt="SQL"></li>
+                </ul>
+            </div>
+            <!-- Frameworks -->
+            <div class="skills-category">
+                <h2><span>Frameworks</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/react.png" title="React" alt="React"></li>
+                    <li><img class="skills-images" src="images/angular.png" title="Angular" alt="Angular"></li>
+                    <li><img class="skills-images" src="images/ionic.png" title="Ionic" alt="Ionic"></li>
+                </ul>
+            </div>
+            <!-- Tools -->
+            <div class="skills-category">
+                <h2><span>Tools</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/git.png" title="Git" alt="Git"></li>
+                </ul>
+            </div>
+        </div>
     </section>
+    <section id="projects" class="projects">
+        <div class="skills-header">
+            <h1><span>Projects</span></h1>
+        </div>
+        <div class="project-item">
+            <!-- Parte izquierda (información del proyecto) -->
+            <div class="project-info">
+                <h2><span>Mecanografía</span></h2>
+                <p>Este es un juego de mecanografía hecho con JavaScript puro sin frameworks.</p>
+                <div class="tech-icons">
+                    <ul>
+                        <li><img src="images/html.png" alt="HTML"></li>
+                        <li><img src="images/css-3.png" alt="CSS"></li>
+                        <li><img src="images/js.png" alt="JavaScript"></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a target="_blank" href="https://github.com/IgnacioAndrade1221/Mecanografia">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Parte derecha (video) -->
+            <div class="project-video">
+                <video controls>
+                    <source src="videos/Mecanografia-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    <script src="menu.js"></script>
+
 </body>
 </html>
