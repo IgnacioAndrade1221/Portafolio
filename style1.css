@@ -420,3 +420,118 @@ header.hidden {
         max-width: 100%;
     }
 }
+
+/*Proyecto*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.project-info {
+    width: 45%;  /* Ocupa el 45% del ancho */
+    padding-right: 2rem;
+}
+
+.project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-icons ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.tech-icons img {
+    width: 30px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+}
+
+.project-video {
+    width: 50%;  /* Ocupa el 50% del ancho */
+}
+
+.project-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+@media (max-width: 995px) {
+    .project-item {
+        flex-direction: column; /* Pone los elementos en columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .project-info, .project-video {
+        width: 100%; /* Las secciones ocupan todo el ancho en móviles */
+        padding-right: 0;
+    }
+
+    .project-video video {
+        max-width: 100%;
+    }
+}
+
+.project-item p{
+    font-size: 1.6rem;
+}
+
+.tech-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.education {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: black;
+    color: white;
+    margin-top: -10%;
+}
+
+.education-info p{
+    font-size: 1.6rem;
+}
+.education-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: black;
+    color: white;
+    margin-top: -20%;
+}
+
+.contact-info p{
+    font-size: 1.6rem;
+}
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
