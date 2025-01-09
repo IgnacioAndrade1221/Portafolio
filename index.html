@@ -1,87 +1,130 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="body">
+<body>
     <header>
-        <nav class="interfaz">
-            <ul class="ul1">
-                <li class="li1"><a class="a1" href="#misproyectos">Mis proyectos</a></li>
-                <li class="li1"><a class="a1" href="#Habilidades">Habilidades</a></li>
-                <li class="li1"><a class="a1" href="#contactame">Contactame</a></li>
-            </ul>
+        <a href="#" class="logo">Ignacio Andrade</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#skills" >Skills</a>
+            <a href="#projects" >Projects</a>
+            <a href="#education" >Education</a>
+            <a href="#contact" >Contact</a>
         </nav>
-        <div class="crol"></div>
-        <script src="menu.js"></script>
-
     </header>
-
-    <div class="container mt-5">
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center mt-5">
-                <img class="perfil img-fluid rounded-circle" src="images/fotomiajeje.PNG" alt="Perfil">
+    <section class="home">
+        <div class="home-img">
+            <img src="images/fotomiajeje.PNG" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Ignacio</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hola,soy un analista programador computacional el cual tambien es <br>estudiante de 5to semestre en Ingenieria en informatica en Duoc UC, <br>el cual le motiva mucho
+                la programacion y el constante aprendizaje.</p>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/ignacioalexis""><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/IgnacioAndrade1221""><i class="fa-brands fa-github"></i></a>
             </div>
-            <div class="col-md-8">
-                <h1 class="titulo col-md-10">Ignacio Andrade</h1>
-                <h2 class="subtitulo col-md-10">Software Developer</h2>
-                <p class="ptitulo col-md-10">Hola,soy un estudiante de 4to semestre en Ingenieria en informatica en Duoc UC, el cual <br> le motiva mucho
-                la programacion y el constante aprendizaje. </p>
-                <div class="social-links mt-3">
-                    <a href="https://github.com/IgnacioAndrade1221" target="_blank" rel="noopener noreferrer" class="d-inline-block mx-2">
-                        <img class="github img-fluid mt-2" src="images/githubicon.png" alt="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ignacioalexis" target="_blank" rel="noopener noreferrer" class="d-inline-block mx-2">
-                        <img class="linkedin img-fluid mt-2" src="images/linkedinicoooon.png" alt="LinkedIn">
-                    </a>
+            <a target="_blank" href="#" class="btn">CV</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skills-header">
+            <h1><span>Skills</span></h1>
+        </div>
+        <div class="skills-container">
+            <!-- Lenguajes -->
+            <div class="skills-category">
+                <h2><span>Languages</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/python.png" title="Python" alt="Python"></li>
+                    <li><img class="skills-images" src="images/html.png" title="HTML" alt="HTML"></li>
+                    <li><img class="skills-images" src="images/css-3.png" title="CSS" alt="CSS"></li>
+                    <li><img class="skills-images" src="images/js.png" title="JavaScript" alt="JavaScript"></li>
+                    <li><img class="skills-images" src="images/java.png" title="Java" alt="Java"></li>
+                    <li><img class="skills-images" src="images/sql.png" title="SQL" alt="SQL"></li>
+                </ul>
+            </div>
+            <!-- Frameworks -->
+            <div class="skills-category">
+                <h2><span>Frameworks</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/react.png" title="React" alt="React"></li>
+                    <li><img class="skills-images" src="images/angular.png" title="Angular" alt="Angular"></li>
+                    <li><img class="skills-images" src="images/ionic.png" title="Ionic" alt="Ionic"></li>
+                </ul>
+            </div>
+            <!-- Tools -->
+            <div class="skills-category">
+                <h2><span>Tools</span></h2>
+                <ul>
+                    <li><img class="skills-images" src="images/git.png" title="Git" alt="Git"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="skills-header">
+            <h1><span>Projects</span></h1>
+        </div>
+        <div class="project-item">
+            <!-- Parte izquierda (información del proyecto) -->
+            <div class="project-info">
+                <h2><span>Mecanografía</span></h2>
+                <p>Este es un juego de mecanografía hecho con JavaScript puro sin frameworks.</p>
+                <div class="tech-icons">
+                    <ul>
+                        <li><img class="skills-images" src="images/html.png" title="HTML" alt="HTML"></li>
+                        <li><img class="skills-images" src="images/css-3.png" title="CSS" alt="CSS"></li>
+                        <li><img class="skills-images" src="images/js.png" title="JavaScript" alt="JavaScript"></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a target="_blank" href="https://github.com/IgnacioAndrade1221""><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
+    
+            <!-- Parte derecha (video) -->
+            <div class="project-video">
+                <video controls>
+                    <source src="videos/Mecanografia-video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <main>
-        <div class="item text-center" id="Habilidades">
-            <h2 class="tituloperono my-5">Mis habilidades</h2>
-            <nav class="habilidades">
-                <li class="li1"><img class="html img-fluid" src="images/html.png" alt="HTML"></li>
-                <li class="li1"><img class="html img-fluid" src="images/css-3.png" alt="CSS"></li>
-                <li class="li1"><img class="html img-fluid" src="images/js.png" alt="JAVASCRIPT"></li>
-                <li class="li1"><img class="html img-fluid" src="images/react.png" alt="REACT"></li>
-                <li class="li1"><img class="html img-fluid" src="images/angular.png" alt="ANGULAR"></li>
-            </nav>
+    <section id="education" class="education">
+        <div class="skills-header">
+            <h1><span>EDUCATION</span></h1>
         </div>
-        <div class="item text-center" id="contactame">
-            <h2 class="tituloperono my-5">Contactame</h2>
-            <ul class="list-unstyled p-0">
-                <!-- Teléfono -->
-                <li class="d-flex align-items-center justify-content-center my-2">
-                    <div class="d-flex align-items-center">
-                        <img class="css img-fluid " src="images/phone-call.png" alt="Celular">
-                        <span class="ms-2">+56965257957</span>
-                    </div>
-                </li>
-                <!-- Correo electrónico -->
-                <li class="d-flex align-items-center justify-content-center my-2">
-                    <div class="d-flex align-items-center">
-                        <a href="mailto:ignacio.andrade1221@gmail.com?subject=Asunto%20del%20correo&body=Mensaje%20aquí" class="d-flex align-items-center text-decoration-none">
-                            <img class="css img-fluid" src="images/email.png" alt="Correo electrónico">
-                        </a>
-                        <span class="ms-2">ignacio.andrade1221@gmail.com</span>
-
-                    </div>
-                </li>
-            </ul>
+        <div class="education-info">
+            <h2><span>DuocUC(2023-actualmente)</span></h2>
+            <p>Estudiante de ingenieria Informatica actualmente cursando el 5to semestre</p>
         </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="skills-header">
+            <h1><span>CONTACT</span></h1>
+        </div>
+        <div class="contact-info">
+            <h2><span>Correo</span></h2>
+            <p>ignacio.andrade1221@gmail.com</p>
+            <h2><span>N° Telefonico</span></h2>
+            <p>+569 65257957</p>
+        </div>
+    </section>
+    
+    <script src="menu.js"></script>
 
-        
-    </main>
 </body>
 </html>
