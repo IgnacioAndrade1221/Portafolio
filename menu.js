@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
     } else {
  
         header.classList.remove("hidden");
-    }
+    }  
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 });

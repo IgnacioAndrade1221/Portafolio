@@ -9,15 +9,18 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="#" class="logo">Ignacio Andrade</a>
 
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#skills" >Skills</a>
-            <a href="#projects" >Projects</a>
-            <a href="#education" >Education</a>
-            <a href="#contact" >Contact</a>
+            <a id="" href="#" data-section="header" data-value="home" class="active"> Home</a>
+            <a href="#skills" data-section="header" data-value="skills" >Skills</a>
+            <a href="#projects" data-section="header" data-value="projects" >Projects</a>
+            <a href="#education" data-section="header" data-value="education" >Education</a>
+            <a href="#contact" data-section="header" data-value="contact" >Contact</a>
+            <button class="lang-button" data-language="es">ES</button>
+            <button class="lang-button"data-language="en">EN</button>
+
         </nav>
     </header>
     <section class="home">
@@ -25,9 +28,9 @@
             <img src="images/fotomiajeje.PNG" alt="">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Ignacio</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hola,soy un analista programador computacional el cual tambien es estudiante de 5to semestre en Ingenieria en informatica en Duoc UC,el cual le motiva mucho
+            <h1 data-section="home" data-value="greeting" >Hi, It's <span>Ignacio</span></h1>
+            <h3 class="typing-text" data-section="home" data-value="role" >I'm a <span></span></h3>
+            <p data-section="home" data-value="description">Hola,soy un analista programador computacional el cual tambien es estudiante de 5to semestre en Ingenieria en informatica en Duoc UC,el cual le motiva mucho
                 la programacion y el constante aprendizaje.</p>
             <div class="social-icons">
                 <a target="_blank" href="https://www.linkedin.com/in/ignacioalexis""><i class="fa-brands fa-linkedin"></i></a>
@@ -39,12 +42,12 @@
 
     <section id="skills" class="skills">
         <div class="skills-header">
-            <h1><span>Skills</span></h1>
+            <h1><span  data-section="skills" data-value="title">Skills</span></h1>
         </div>
         <div class="skills-container">
             <!-- Lenguajes -->
             <div class="skills-category">
-                <h2><span>Languages</span></h2>
+                <h2><span data-section="skills" data-value="languages">Languages</span></h2>
                 <ul>
                     <li><img class="skills-images" src="images/python.png" title="Python" alt="Python"></li>
                     <li><img class="skills-images" src="images/html.png" title="HTML" alt="HTML"></li>
@@ -69,7 +72,7 @@
             </div>
             <!-- Tools -->
             <div class="skills-category">
-                <h2><span>Tools</span></h2>
+                <h2><span data-section="skills" data-value="tools">Tools</span></h2>
                 <ul>
                     <li><img class="skills-images" src="images/git.png" title="Git" alt="Git"></li>
                 </ul>
@@ -78,13 +81,13 @@
     </section>
     <section id="projects" class="projects">
         <div class="skills-header">
-            <h1><span>Projects</span></h1>
+            <h1><span data-section="projects" data-value="title">Projects</span></h1>
         </div>
         <div class="project-item">
             <!-- Parte izquierda (información del proyecto) -->
             <div class="project-info">
-                <h2><span>Mecanografía</span></h2>
-                <p>Este es un juego de mecanografía hecho con JavaScript puro sin frameworks.</p>
+                <h2><span data-section="typing_game" data-value="name">Mecanografía</span></h2>
+                <p data-section="typing_game" data-value="description">Este es un juego de mecanografía hecho con JavaScript puro sin frameworks.</p>
                 <div class="tech-icons">
                     <ul>
                         <li><img class="skills-images" src="images/html.png" title="HTML" alt="HTML"></li>
@@ -108,24 +111,24 @@
 
     <section id="education" class="education">
         <div class="skills-header">
-            <h1><span>EDUCATION</span></h1>
+            <h1><span data-section="education" data-value="title">EDUCATION</span></h1>
         </div>
         <div class="education-info">
             <h2><span>DuocUC(2023-actualmente)</span></h2>
-            <p>Estudiante de ingenieria Informatica actualmente cursando el 5to semestre</p>
+            <p data-section="education" data-value="description">Estudiante de ingenieria Informatica actualmente cursando el 5to semestre</p>
         </div>
     </section>
     
     <section id="contact" class="contact">
         <div class="skills-header">
-            <h1><span>CONTACT</span></h1>
+            <h1><span data-section="contact" data-value="title">CONTACT</span></h1>
         </div>
         <div class="contact-container">
             <!-- Información de contacto -->
             <div class="contact-info">
-                <h2><span>Correo</span></h2>
+                <h2><span data-section="contact" data-value="email">Correo</span></h2>
                 <p>ignacio.andrade1221@gmail.com</p>
-                <h2><span>N° Telefónico</span></h2>
+                <h2><span data-section="contact" data-value="phone">N° Telefónico</span></h2>
                 <p>+569 65257957</p>
                 <div class="social-icons">
                     <a href="https://github.com/IgnacioAndrade1221" target="_blank"><i class="fa-brands fa-github"></i></a>
