@@ -195,7 +195,10 @@ span{
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 280px;
+    min-width: 280px;    
+}
+p{
+    margin-top: 30px;
 }
 
 .typing-text span{
