@@ -13,3 +13,4 @@ window.addEventListener("scroll", () => {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 });
+
