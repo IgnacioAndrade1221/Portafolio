@@ -85,7 +85,7 @@ export class NavbarComponent {
   i18n = inject(I18nService);
 
   mobileOpen = signal(false);
-
+ 
   navLinks = signal([
     { id: 'skills',     labelEs: 'Stack',       labelEn: 'Stack' },
     { id: 'experience', labelEs: 'Experiencia', labelEn: 'Experience' },
@@ -101,7 +101,7 @@ export class NavbarComponent {
   scrollTo(id: string) {
     const el = document.getElementById(id);
     if (el) {
-      const offset = 72; // navbar height
+      const offset = 72; // navbar 
       const top = el.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
