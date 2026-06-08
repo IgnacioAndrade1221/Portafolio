@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "dist/PortafolioAngular",
+  "outputDirectory": "dist/PortafolioAngular/browser",
   "rewrites": [
     {
       "source": "/(.*)",
