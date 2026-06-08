@@ -21,7 +21,7 @@ export interface Project {
   title: string;
   description: Translation;
   techStack: string[];
-  videoUrl: string;
+  videoUrl?: string;
   githubUrl?: string;
 }
 

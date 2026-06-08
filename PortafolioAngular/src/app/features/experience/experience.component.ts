@@ -6,33 +6,49 @@ import { PORTFOLIO_DATA } from '../../core/data/portafolio.data';
   selector: 'app-experience',
   standalone: true,
   template: `
-    <section class="py-12 border-t border-gray-200 dark:border-gray-800">
-      <h3 class="text-3xl font-bold mb-10">
-        {{ i18n.currentLang() === 'es' ? 'Experiencia Laboral' : 'Work Experience' }}
-      </h3>
+    <section id="experience" class="py-20 section-divider">
 
-      <div class="space-y-12">
-        @for (exp of data.experience; track exp.company) {
-          <div class="relative border-l-2 border-gray-200 dark:border-gray-800 pl-6 ml-3 md:ml-0 md:border-none md:pl-0">
-            
-            <div class="md:hidden absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-1.5 ring-4 ring-white dark:ring-gray-950"></div>
+      <div class="flex items-center gap-4 mb-12">
+        <h3 class="text-2xl font-bold text-white/90">
+          {{ i18n.currentLang() === 'es' ? 'Experiencia Laboral' : 'Work Experience' }}
+        </h3>
+        <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+      </div>
 
-            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2 mb-4">
-              <div>
-                <h4 class="text-xl font-bold text-gray-900 dark:text-white">{{ i18n.t(exp.role) }}</h4>
-                <div class="text-lg font-medium text-blue-600 dark:text-blue-400">{{ exp.company }}</div>
+      <div class="relative">
+        <!-- Timeline vertical line -->
+        <div class="absolute left-0 top-2 bottom-2 w-px bg-gradient-to-b from-indigo-500/40 via-indigo-500/10 to-transparent" aria-hidden="true"></div>
+
+        <div class="space-y-10 pl-8">
+          @for (exp of data.experience; track exp.company; let i = $index) {
+            <div class="group relative">
+
+              <div class="absolute -left-8 top-1.5 flex items-center justify-center">
+                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500 ring-4 ring-[#0a0a0f] group-hover:ring-indigo-500/20 transition-all duration-300"></div>
               </div>
-              <div class="text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-md self-start">
-                {{ i18n.t(exp.period) }}
+
+              <div class="rounded-2xl p-6 card-glass group-hover:border-white/10 transition-all duration-300">
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
+                  <div>
+                    <h4 class="text-lg font-bold text-white/95 leading-tight">{{ i18n.t(exp.role) }}</h4>
+                    <p class="text-indigo-400 font-medium mt-0.5">{{ exp.company }}</p>
+                  </div>
+                  <span class="inline-flex self-start text-xs font-semibold text-gray-500 bg-white/[0.04] border border-white/[0.07] px-3 py-1.5 rounded-lg whitespace-nowrap">
+                    {{ i18n.t(exp.period) }}
+                  </span>
+                </div>
+
+                <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                  {{ i18n.t(exp.description) }}
+                </p>
+
               </div>
             </div>
-            
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-base md:text-lg">
-              {{ i18n.t(exp.description) }}
-            </p>
-          </div>
-        }
+          }
+        </div>
       </div>
+
     </section>
   `
 })
