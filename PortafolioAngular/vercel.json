@@ -1,9 +1,0 @@
-{
-  "outputDirectory": "dist/portafolio-angular/browser",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
