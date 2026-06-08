@@ -1,9 +1,9 @@
 {
+  "outputDirectory": "PortafolioAngular/dist/PortafolioAngular",
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "cleanUrls": true
+  ]
 }
